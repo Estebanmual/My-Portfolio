@@ -4,6 +4,9 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
 }
 
 .wrapper {
@@ -12,23 +15,53 @@ html {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    border: 10px solid red;
 }
 
 .nav-wrapper {
     display: flex;
     list-style: none;
     flex-direction: row-reverse;
-    padding-top: 7px;
-    border: 10px solid yellow;
+    padding: 20px;
 }
 
 .link-hamburger-icon {
     display: flex;
     color: #1A2236;
     text-decoration: none;
-    align-items: center;
+    zoom: 1.5;
+}
 
+.headline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.name-headline{
+    
+    text-align: left;
+    font-size: 3.5714rem;
+    padding: 4px 16px 0px 16px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 100%;
+    color: #1A2236;
+}
+
+.content-headline{
+    text-align: left;
+    padding: 20px 16px 0px 16px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 21px;
+    letter-spacing: -0.01em;
+
+    color: #1A2236;*/
 }
 
 @media all and (min-width:501px) {
