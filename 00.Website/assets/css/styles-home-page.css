@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -15,7 +17,7 @@ html {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
-  background-color: #ffffff;    
+  background-color: #fff;
 }
 
 .nav-wrapper {
@@ -66,28 +68,27 @@ html {
 
 .collaboration-headline {
   display: flex;
-  margin: 40px 32px 0px 32px;
+  margin: 40px 32px 0 32px;
   height: 50px;
   background: #1a2236;
   justify-content: center;
   align-items: center;
-
 }
 
 .collaboration-headline p {
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.143rem;
   line-height: 24px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
-@media all and (min-width:501px) {
+/*@media all and (min-width: 501px) {
 
 }
 
-@media all and (min-width:1001px) {
+@media all and (min-width: 1001px) {
 
-}
+}*/
