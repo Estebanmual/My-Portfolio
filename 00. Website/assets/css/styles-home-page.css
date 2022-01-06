@@ -15,14 +15,16 @@ html {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-    background-color: #E5E5E5;
+    background-color: #FFFFFF     
 }
 
 .nav-wrapper {
     display: flex;
     list-style: none;
     flex-direction: row-reverse;
-    padding: 20px;
+    padding: 25px;
+    background: url("/03_Resources/01_Graphics/Stock/home-nav-wra.svg");
+    background-repeat: no-repeat;
 }
 
 .link-hamburger-icon {
