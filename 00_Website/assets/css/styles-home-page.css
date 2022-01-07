@@ -96,6 +96,34 @@ html {
   background-attachment: scroll;
   background-size: contain;
 }
+
+.wrapper-projects {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.title-project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title-project-section h1{
+  text-align: left;
+  font-size: 3.5714rem;
+  padding: 4px 16px 0 16px;
+  font-family: Playfair Display, serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  color: #1a2236;
+}
+
 /* @media all and (min-width: 501px) {
 
 }
