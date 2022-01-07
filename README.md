@@ -4,7 +4,7 @@
 
 > This is my personal portfolio. In here you would be able of see my differents works. 
 
-![screenshot](/03_Resources/02. Photos/03. Screenshots/screenshot-home-page.png)
+![screenshot](/03_Resources/02_Photos/03_Screenshots/screenshot-home-page.png)
 
 ## Built With
 
