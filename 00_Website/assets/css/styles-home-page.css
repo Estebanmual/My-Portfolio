@@ -48,7 +48,7 @@ html {
   text-align: left;
   font-size: 3.5714rem;
   padding: 4px 16px 0 16px;
-  font-family: Playfair Display, serif;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
   line-height: 100%;
@@ -58,7 +58,7 @@ html {
 .content-headline {
   text-align: left;
   padding: 20px 16px 0 16px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -77,7 +77,7 @@ html {
 }
 
 .collaboration-headline p {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.143rem;
@@ -117,11 +117,82 @@ html {
   text-align: left;
   font-size: 3.5714rem;
   padding: 4px 16px 0 16px;
-  font-family: Playfair Display, serif;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
   line-height: 100%;
   color: #1a2236;
+
+}
+
+.projects-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1a2236;
+
+  outline: 1px solid orange;
+}
+
+.projects-index h2 {
+  text-align: left;
+  font-size: 1.429rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  padding: 4px 16px 0 16px;
+  color: #fff;
+}
+
+.projects-index ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px 20px 20px;
+  list-style: none;
+  text-align: left;
+}
+
+.projects-index ul li {
+  padding: 6px 10px 6px 10px;
+  background-color: #98dede;
+  font-size: .7378rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: light;
+  font-weight: 300;
+  line-height: 80%;
+  color: #fff;
+  color: #1a2236;
+}
+.projects-index .see-project-btn {
+  display: inline-flex;
+  flex-direction: row;
+  margin: 0 0 0 20px;
+  height: 44px;
+  width: 178px;
+  align-items: center;
+  text-align: left;
+  outline: 1px solid white;
+}
+
+.projects-index .see-project-btn p {
+  text-align: left;
+  font-size: 1.142rem;
+  padding-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: Medium;
+  font-weight: 500;
+  line-height: 24px;
+  color: #fff;
+} 
+
+.projects-index .see-project-btn p .arrow-see-project-btn {
+  margin-left: 12px;
+  zoom: 80%;
+
 }
 
 /* @media all and (min-width: 501px) {
