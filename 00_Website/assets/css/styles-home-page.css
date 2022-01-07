@@ -27,6 +27,7 @@ html {
   padding: 25px;
   background: url("/03_Resources/01_Graphics/02_Stock/home-nav-wra.svg");
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .link-hamburger-icon {
@@ -85,6 +86,15 @@ html {
   color: #fff;
 }
 
+.separation-headline-projects {
+  background-image: url('/03_Resources/01_Graphics/02_Stock/separation-headline-project.svg');
+  margin-top: 20px;
+  height: 36vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
 /* @media all and (min-width: 501px) {
 
 }
