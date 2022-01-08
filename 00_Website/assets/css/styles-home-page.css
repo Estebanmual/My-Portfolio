@@ -156,6 +156,18 @@
   text-align: left;
 }
 
+.list-languages-about > li,
+.list-frameworks-about > li,
+.list-skills-about > li {
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 1.286rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+
 .projects-index ul li {
   padding: 6px 10px 6px 10px;
   background-color: #98dede;
@@ -177,6 +189,16 @@
   align-items: center;
   text-align: left;
   outline: 1px solid white;
+}
+
+.cv-btn p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.143rem;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
 }
 
 .projects-index .see-project-btn p {
@@ -250,16 +272,6 @@
   align-items: center;
 }
 
-.cv-btn p {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.143rem;
-  line-height: 24px;
-  text-align: center;
-  color: #fff;
-}
-
 .download-btn {
   margin-left: 1.428rem;
 }
@@ -315,18 +327,6 @@
   background-image: url(/03_Resources/01_Graphics/02_Stock/background-icon-skills.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
-}
-
-.list-languages-about > li,
-.list-frameworks-about > li,
-.list-skills-about > li {
-  padding: 0.5rem;
-  text-align: left;
-  font-size: 1.286rem;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 27px;
 }
 
 .languages-about h2,
