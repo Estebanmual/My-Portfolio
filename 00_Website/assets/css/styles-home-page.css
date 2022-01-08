@@ -1,11 +1,7 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -50,7 +46,7 @@ html {
   padding: 4px 16px 0 16px;
   font-family: 'Playfair Display', serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 100%;
   color: #1a2236;
 }
@@ -60,7 +56,7 @@ html {
   padding: 20px 16px 0 16px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1rem;
   line-height: 21px;
   letter-spacing: -0.01em;
@@ -97,13 +93,17 @@ html {
   background-size: contain;
 }
 
-.wrapper-projects {
-  display: flex;
+.wrapper-projects-section { 
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
   background-color: #fff;
+}
+
+.wrapper-projects {
+  display: grid;
+  grid-template-rows: repeat(6,auto);
 }
 
 .title-project-section {
@@ -127,6 +127,7 @@ html {
 
 .projects-index {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 20px 20px 20px;
@@ -147,6 +148,8 @@ html {
 .projects-index ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
   justify-content: space-between;
   align-items: center;
   padding: 16px 20px 20px 20px;
@@ -196,9 +199,144 @@ html {
   box-sizing: content-box;
   max-width: 100vw;
   margin: -2px -20px 0px -20px;
-  max-height: auto;
+  height: auto;
+}*/
+
+.wrapper-about {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
 }
 
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-text .title-about{
+  text-align: left;
+  font-size: 3.5714rem;
+  padding: 4px 16px 0 16px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.about-text .summary-about{
+  text-align: left;
+  padding: 20px 16px 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+.cv-btn {
+  display: flex;
+  margin: 12px 32px 0 32px;
+  height: 50px;
+  background: #1a2236;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-btn p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.143rem;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+.download-btn {
+  margin-left: 1.428rem;
+}
+
+.wrapper-skills {
+  display: grid;
+  /*grid-template-columns: auto;*/
+  grid-template-rows: auto auto auto;
+  row-gap: 1.1429rem;
+  padding: 1rem;
+  min-height: 40vh;
+}
+
+.languages-about{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 20.642rem;
+  width: 100%;
+  background-color: #1c528a;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/03_Resources/01_Graphics/02_Stock/background-icon-languages.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.frameworks-about {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 20.642rem;
+  width: 100%;
+  background-color: #e2505c;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/03_Resources/01_Graphics/02_Stock/backgroun-icon-frameworks.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.skills-about{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 20.642rem;
+  width: 100%;
+  background-color: #febf52;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/03_Resources/01_Graphics/02_Stock/background-icon-skills.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.list-languages-about > li, .list-frameworks-about > li, .list-skills-about > li{
+  padding: .5rem;
+  text-align: left;
+  font-size: 1.286rem;
+  font-family: 'Poppins', sans-serif; 
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+}
+ 
+.languages-about h2, .frameworks-about h2, .skills-about h2 {
+    text-align: left;
+    font-size: 1.429rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px;
+    padding: 20px 16px 0 16px;
+}
 
 /* @media all and (min-width: 501px) {
 
