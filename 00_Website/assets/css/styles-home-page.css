@@ -201,7 +201,8 @@
   color: #fff;
 }
 
-.projects-index .see-project-btn p {
+.projects-index .see-project-btn a {
+  text-decoration: none;
   text-align: left;
   font-size: 1.142rem;
   padding-left: 10px;
