@@ -346,9 +346,14 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  background: #f9f9fa;
+  background-image: url(/03_Resources/01_Graphics/02_Stock/home-nav-wra.svg);
+  background-repeat: no-repeat;
 }
 
 .wrapper-text-contact-form {
+  display: flex;
+  flex-direction: column;
   margin: 106px 14px 0 18px;
 }
 
@@ -379,6 +384,8 @@
 
 .wrapper-form-elements ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper-form-elements ul li {
@@ -431,6 +438,8 @@
 }
 
 .wrapper-footer {
+  display: flex;
+  flex-direction: column;
   background: #1a2236;
   width: 100%;
 }
