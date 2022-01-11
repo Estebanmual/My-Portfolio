@@ -342,10 +342,39 @@
   padding: 20px 16px 0 16px;
 }
 
-/* @media all and (min-width: 501px) {
-
+.wrapper-contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 32px 0;
 }
 
+.wrapper-text-contact-form {
+  margin: 106px 14px 0 18px;
+}
+
+.title-contact-form {
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1a2236;
+}
+
+.description-contact-form {
+  margin-bottom: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  color: #1a2236;
+}
+
+/* @media all and (min-width: 501px) {
+}
 @media all and (min-width: 1001px) {
 
 } */
