@@ -345,7 +345,7 @@
 .wrapper-contact-form {
   display: flex;
   flex-direction: column;
-  margin: 50px 0 32px 0;
+  margin-top: 50px;
 }
 
 .wrapper-text-contact-form {
@@ -428,6 +428,32 @@
   font-size: 16px;
   line-height: 24px;
   color: #fff;
+}
+
+.wrapper-footer {
+  background: #1a2236;
+  width: 100%;
+}
+
+.footer-title {
+  margin: 32px 0 30px 16px;
+  display: flex;
+}
+
+.title-footer {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #92dcdc;
+  margin-right: 16px;
+}
+
+.icons-social-media-footer {
+  display: flex;
+  margin: 0 20px 40px 19px;
+  justify-content: space-between;
 }
 
 /* @media all and (min-width: 501px) {
