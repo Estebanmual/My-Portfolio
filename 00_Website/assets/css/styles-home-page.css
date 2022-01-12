@@ -150,6 +150,12 @@
   gap: 1rem;
 }
 
+form > ul > li {
+  position: relative;
+  list-style: none;
+  margin-right: 1.6rem;
+}
+
 .languages-project li {
   display: flex;
   background-color: #98dede;
@@ -283,20 +289,14 @@
   font-size: 2rem;
   line-height: 3rem;
   color: #fff;
-  align-content: left;
+  text-align: left;
   margin: 5rem 18.4rem 0 5rem;
 }
 
 .wrapper-languages > ul,
 .wrapper-frameworks > ul,
 .wrapper-skills > ul {
-  margin: 2.1rem 0 5.3rem 5rem; 
-}
-
-form > ul > li{
-  position: relative;
-  list-style: none;
-  margin-right: 1.6rem;
+  margin: 2.1rem 0 5.3rem 5rem;
 }
 
 .wrapper-languages > ul > li,
@@ -350,13 +350,13 @@ form > ul > li{
 
 input {
   background: #fff;
-  border: .1rem solid #1a2236;
-  border-radius: .4rem;
+  border: 0.1rem solid #1a2236;
+  border-radius: 0.4rem;
   height: 5.2rem;
   width: 100%;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   padding-left: 1.6rem;
-  padding-top: .4rem;
+  padding-top: 0.4rem;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -368,12 +368,12 @@ input {
 textarea {
   background: #fff;
   border: .1rem solid #1a2236;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   height: 11.2rem;
   width: 100%;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   padding-left: 1.6rem;
-  padding-top: .4rem;
+  padding-top: 0.4rem;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -391,11 +391,12 @@ label {
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   color: #7d7c84;
 }
 
-input::placeholder, .message-label{
+input::placeholder,
+.message-label {
   opacity: 0%;
 }
 
