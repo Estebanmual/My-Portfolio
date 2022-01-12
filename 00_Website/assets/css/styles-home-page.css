@@ -367,7 +367,7 @@ input {
 
 textarea {
   background: #fff;
-  border: .1rem solid #1a2236;
+  border: 0.1rem solid #1a2236;
   border-radius: 0.4rem;
   height: 11.2rem;
   width: 100%;
