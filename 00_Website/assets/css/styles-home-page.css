@@ -18,7 +18,10 @@
   position: fixed;
   height: 100%;
   width: 100%;
-  background: url(/03_Resources/01_Graphics/02_Stock/image_geometry_menu_1.svg) left top no-repeat, url(/03_Resources/01_Graphics/02_Stock/image_geometry_menu_2.svg) center bottom no-repeat;
+  background: url(/03_Resources/01_Graphics/02_Stock/image_geometry_menu_1.svg)
+      left top no-repeat,
+    url(/03_Resources/01_Graphics/02_Stock/image_geometry_menu_2.svg) center
+      bottom no-repeat;
   background-color: transparent;
   clip-path: circle(2.5rem at calc(100% - 4.5rem) 4.5rem);
 }
@@ -53,7 +56,7 @@
 
 .wrapper-menu li a {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.6rem;
@@ -69,7 +72,7 @@
 }
 
 .title-headline {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -80,13 +83,12 @@
 }
 
 .content-headline {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
   line-height: 2.1rem;
   letter-spacing: -0.01em;
-  
 }
 
 .wrapper-button {
@@ -99,7 +101,7 @@
   background-color: #1a2236;
   border: none;
   height: 5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
@@ -118,7 +120,7 @@
 
 .title-project-section {
   grid-row: 1;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -174,7 +176,7 @@
 }
 
 .name-project {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 2rem;
@@ -199,7 +201,7 @@ form > ul > li {
   display: flex;
   background-color: #98dede;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.03334rem;
@@ -219,7 +221,7 @@ form > ul > li {
   align-items: center;
   justify-content: space-around;
   background-color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
@@ -243,7 +245,7 @@ form > ul > li {
 }
 
 .title-about {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -253,7 +255,7 @@ form > ul > li {
 }
 
 .description-about {
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -322,7 +324,7 @@ form > ul > li {
 .wrapper-languages > h4,
 .wrapper-frameworks > h4,
 .wrapper-skills > h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 2rem;
@@ -341,7 +343,7 @@ form > ul > li {
 .wrapper-languages > ul > li,
 .wrapper-frameworks > ul > li,
 .wrapper-skills > ul > li {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
@@ -360,7 +362,7 @@ form > ul > li {
 
 .title-footer {
   margin: 10.6rem 0 0 1.8rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -371,7 +373,7 @@ form > ul > li {
 
 .description-footer {
   margin: 2rem 0 0 1.8rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -396,7 +398,7 @@ input {
   margin-bottom: 0.8rem;
   padding-left: 1.6rem;
   padding-top: 0.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -413,7 +415,7 @@ textarea {
   margin-bottom: 0.8rem;
   padding-left: 1.6rem;
   padding-top: 0.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -425,7 +427,7 @@ label {
   position: absolute;
   top: 4px;
   left: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -458,7 +460,7 @@ input::placeholder,
 }
 
 .title-social {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -476,27 +478,27 @@ input::placeholder,
 }
 
 .information-project5 .long {
-  display: inline-block;  
+  display: inline-block;
 }
 
 .information-project5 .short {
-  display: none;  
+  display: none;
 }
 
 @media all and (min-width: 1440px) {
   *,
   *::before,
   *::after {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
   }
 
   #active,
   .button-menu {
     display: none;
   }
-  
+
   .wrapper-header {
     background: none;
     display: grid;
@@ -527,7 +529,8 @@ input::placeholder,
     font-size: 1.4rem;
     line-height: 2.1rem;
     letter-spacing: -0.01em;
-    margin: 6rem 9.4rem 0 16rem; }
+    margin: 6rem 9.4rem 0 16rem;
+  }
 
   .separation-header-projects {
     grid-column: 2 / 3;
@@ -547,16 +550,16 @@ input::placeholder,
     background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
-    height: 100%; 
+    height: 100%;
   }
-  
+
   .button-index {
     width: 25.4rem;
     height: 7rem;
   }
 
   .button-index:active {
-    transform: translateY(.3rem);
+    transform: translateY(0.3rem);
     color: #1a2236;
     background-color: #fff;
     border: 2px solid #1a2236;
@@ -578,7 +581,8 @@ input::placeholder,
   }
 
   .project1-section {
-    grid-area: 1 / 2 / 2 / 3
+    grid-area: 1 / 2 / 2 / 3;
+    overflow: hidden;
   }
 
   .mockup-project1 {
@@ -588,16 +592,29 @@ input::placeholder,
     left: 48rem;
     top: 118.7rem;
   }
+  
 
   .information-project1 {
-   position: absolute; 
+    position: absolute;
     width: 96rem;
     height: 35.3rem;
     left: 48rem;
     top: 139.2rem;
-    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
     backdrop-filter: blur(24px);
     z-index: 1000;
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+  }
+
+  .mockup-project1:hover + .information-project1 {
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .projectname1 {
@@ -623,7 +640,7 @@ input::placeholder,
   .wrapper-see-project-btn1 {
     margin: 6rem 68.8rem 6rem 6rem;
   }
-  
+
   .see-project-button {
     background-color: #fff;
     font-weight: 500;
@@ -646,14 +663,18 @@ input::placeholder,
     height: 27rem;
     width: 46.5rem;
   }
-  
+
   .information-project2 {
     position: absolute;
     width: 46.5rem;
     height: 21.8rem;
     left: 0;
     top: 188rem;
-    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
     backdrop-filter: blur(24px);
   }
 
@@ -682,7 +703,7 @@ input::placeholder,
   }
 
   .project-languages2 li {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 2rem;
@@ -707,7 +728,11 @@ input::placeholder,
     height: 37.2rem;
     left: 0;
     top: 219rem;
-    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
     backdrop-filter: blur(2.4rem);
   }
 
@@ -736,7 +761,7 @@ input::placeholder,
   }
 
   .project-languages2 li {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 2rem;
@@ -748,21 +773,19 @@ input::placeholder,
     margin: 1.5rem 0 3rem 3rem;
   }
 
-
   .project4-section {
     grid-area: 4 / 2 / 5 / 3;
   }
 
   .project5-section {
     position: absolute;
-  width: 46.5rem;
-  height: 27rem;
-  left: 97.5rem;
-  top: 201.5rem;
+    width: 46.5rem;
+    height: 27rem;
+    left: 97.5rem;
+    top: 201.5rem;
   }
 
   .project6-section {
     grid-area: 2 / 2 / 3 / 3;
   }
-
 }
