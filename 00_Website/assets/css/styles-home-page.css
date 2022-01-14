@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  font-size: 3.125vw;
 }
 
 .wrapper-header {
@@ -86,12 +86,13 @@
   font-size: 1.4rem;
   line-height: 2.1rem;
   letter-spacing: -0.01em;
+  
 }
 
 .wrapper-button {
   display: flex;
   flex-direction: column;
-  margin: 0 1.6rem 3.13rem 1.6rem;
+  margin: 4rem 1.6rem 0 0;
 }
 
 .button-index {
@@ -116,6 +117,7 @@
 }
 
 .title-project-section {
+  grid-row: 1;
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
@@ -128,36 +130,36 @@
 .wrapper-projects {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 6fr;
+  grid-template-rows: 7fr;
 }
 
 .project1-section {
-  grid-row: 1;
-  align-self: stretch;
-}
-
-.project2-section {
   grid-row: 2;
   align-self: stretch;
 }
 
-.project3-section {
+.project2-section {
   grid-row: 3;
   align-self: stretch;
 }
 
-.project4-section {
+.project3-section {
   grid-row: 4;
   align-self: stretch;
 }
 
-.project5-section {
+.project4-section {
   grid-row: 5;
   align-self: stretch;
 }
 
-.project6-section {
+.project5-section {
   grid-row: 6;
+  align-self: stretch;
+}
+
+.project6-section {
+  grid-row: 7;
   align-self: stretch;
 }
 
@@ -463,4 +465,297 @@ input::placeholder,
   line-height: 24px;
   color: #92dcdc;
   margin-right: 16px;
+}
+
+.project-languages5 .long {
+  display: inline-block;
+}
+
+.project-languages5 .short {
+  display: none;
+}
+
+.information-project5 .long {
+  display: inline-block;  
+}
+
+.information-project5 .short {
+  display: none;  
+}
+
+@media all and (min-width: 1440px) {
+  *,
+  *::before,
+  *::after {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  }
+
+  #active,
+  .button-menu {
+    display: none;
+  }
+  
+  .wrapper-header {
+    background: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10rem 87.7rem;
+  }
+
+  .wrapper-nav {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .wrapper-headline {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .title-headline {
+    font-size: 11rem;
+    line-height: 100%;
+    margin: 19.2rem 9.4rem 0 16rem;
+  }
+
+  .content-headline {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.01em;
+    margin: 6rem 9.4rem 0 16rem; }
+
+  .separation-header-projects {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: none;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_1.svg);
+    background-repeat: no-repeat;
+    height: 87.7rem;
+  }
+
+  .wrapper-button {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    margin: 5.9rem 0 0 16rem;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    height: 100%;  
+  }
+  
+  .button-index {
+    width: 25.4rem;
+    height: 7rem;
+  }
+
+  .wrapper-projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 55.8rem 35rem 46.5rem 27rem;
+    margin: 21rem 0 0 0;
+  }
+
+  .title-project-section {
+    grid-area: 1 / 1 / 2 / 2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 110px;
+    line-height: 100%;
+  }
+
+  .project1-section {
+    grid-area: 1 / 2 / 2 / 3
+  }
+
+  .mockup-project1 {
+    position: absolute;
+    width: 96rem;
+    height: 55.8rem;
+    left: 48rem;
+    top: 118.7rem;
+  }
+
+  .information-project1 {
+   position: absolute; 
+    width: 96rem;
+    height: 35.3rem;
+    left: 48rem;
+    top: 139.2rem;
+    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    backdrop-filter: blur(24px);
+    z-index: 1000;
+  }
+
+  .projectname1 {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 80%;
+    margin: 6rem 17.4rem 0 6rem;
+  }
+
+  .languages-project1 {
+    margin: 3.4rem 0 0 6rem;
+    gap: 2rem;
+    height: 4rem;
+  }
+
+  .languages-project1 li {
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 2rem;
+    line-height: 80%;
+  }
+
+  .wrapper-see-project-btn1 {
+    margin: 6rem 68.8rem 6rem 6rem;
+  }
+  
+  .see-project-button {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #1a2236;
+    width: 21.2rem;
+    height: 5.1rem;
+  }
+
+  .project2-section {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-self: start;
+    align-self: end;
+    flex-direction: column;
+  }
+
+  .mockup-project2 {
+    height: 27rem;
+    width: 46.5rem;
+  }
+  
+  .information-project2 {
+    position: absolute;
+    width: 46.5rem;
+    height: 21.8rem;
+    left: 0;
+    top: 188rem;
+    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    backdrop-filter: blur(24px);
+  }
+
+  .projectname2 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .information-project2 .long {
+    display: none;
+  }
+
+  .information-project2 .short {
+    display: inline-block;
+  }
+
+  .project-languages2 {
+    display: flex;
+    margin: 2rem 0 0 3rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages2 li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn2 {
+    margin: 1.5rem 0 3rem 3rem;
+  }
+
+  .project3-section {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .mockup-project3 {
+    width: 80rem;
+  }
+  .information-project3 {
+    position: absolute;
+    width: 80rem;
+    height: 37.2rem;
+    left: 0;
+    top: 219rem;
+    background: linear-gradient(0deg, rgba(26, 34, 54, 0.95), rgba(26, 34, 54, 0.95));
+    backdrop-filter: blur(2.4rem);
+  }
+
+  .projectname3 {
+    font-weight: bold;
+    font-size: 5.34rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .information-project3 .long {
+    display: none;
+  }
+
+  .information-project3 .short {
+    display: inline-block;
+  }
+
+  .project-languages2 {
+    display: flex;
+    margin: 2rem 0 0 3rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages2 li {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn2 {
+    margin: 1.5rem 0 3rem 3rem;
+  }
+
+
+  .project4-section {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+
+  .project5-section {
+    position: absolute;
+  width: 46.5rem;
+  height: 27rem;
+  left: 97.5rem;
+  top: 201.5rem;
+  }
+
+  .project6-section {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
 }
