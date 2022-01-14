@@ -547,12 +547,19 @@ input::placeholder,
     background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
-    height: 100%;  
+    height: 100%; 
   }
   
   .button-index {
     width: 25.4rem;
     height: 7rem;
+  }
+
+  .button-index:active {
+    transform: translateY(.3rem);
+    color: #1a2236;
+    background-color: #fff;
+    border: 2px solid #1a2236;
   }
 
   .wrapper-projects {
