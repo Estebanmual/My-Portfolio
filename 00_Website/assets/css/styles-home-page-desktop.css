@@ -34,7 +34,6 @@
   margin: 3.8rem 5rem 3.8rem 0;
 }
 
-
 .wrapper-menu li a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -117,7 +116,7 @@
 .title-project-section {
   grid-column: 1;
   grid-row: 1;
-  font-family: 'Playfair Display',serif;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11rem;
@@ -216,7 +215,7 @@
 
 .project4-section {
   grid-column: 2 / 3;
-  grid-row: 3 / 4
+  grid-row: 3 / 4;
 }
 
 .mockup-project5 {
@@ -282,9 +281,9 @@
 }
 
 .information-project5 .long {
-  display: none;  
+  display: none;
 }
 
 .information-project5 .short {
-  display: inline-block;  
+  display: inline-block;
 }

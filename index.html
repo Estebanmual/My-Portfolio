@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/00_Website/assets/css/styles-home-page.css">
-   <!-- <link rel="stylesheet" media="all and (min-width: 1440px)" href="/00_Website/assets/css/styles-home-page-desktop.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
    
@@ -13,8 +12,7 @@
 </head>
 <body>
     <header class="wrapper-header">
-        <input type="checkbox" id="active">
-        <label for="active" class="button-menu"><img src="/03_Resources/01_Graphics/02_Stock/ic_menu.svg" alt="Hamburger menu" class="icon-hamburgermenu"></label>
+        <img src="/03_Resources/01_Graphics/02_Stock/ic_menu.svg" alt="Hamburger menu" class="icon-hamburgermenu">
         <nav class="wrapper-nav">
             <ul class="wrapper-menu">
                 <li><a href="#">Hello</a></li>
@@ -137,7 +135,7 @@
                 <img src="/04_Mockups/project6-mockup.png" alt="Mockup project 6" class="mockup-projects mockup-project6">
                 <div class="information-project information-project6">
                     <h3 class="name-project name-project6 long">Project name goes here</h3>
-                    <h3 class="name-project name-project6 short" >Project name goes...</h3>
+                    <h3 class="name-project name-project5 short" >Project name goes...</h3>
                     <ul class="languages-project project-languages6">
                         <li>HTML/CSS</li>
                         <li>Ruby on Rails</li>
@@ -151,68 +149,83 @@
                         class="arrow-see-project-btn"
                         /> </button>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="wrapper-about">
-        <h2 class="title-about">About</h2>
-        <p class="description-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea eiusmod</p>
-        <div class="wrapper-button wrapper-button-cv">
-            <button type="button" class="button-index button-cv">Get my CV <img src="/03_Resources/01_Graphics/02_Stock/download-btn.svg" alt="Download botton"></button>
+        <div class="content-about">
+          <h2 class="title-about">About</h2>
+          <p class="description-about">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ea eiusmod
+          </p>
+          <div class="wrapper-button wrapper-button-cv">
+            <button type="button" class="button-index button-cv">
+              Get my CV
+              <img
+                src="/03_Resources/01_Graphics/02_Stock/download-btn.svg"
+                alt="Download botton"
+              />
+            </button>
+          </div>
         </div>
         <div class="wrapper-knowledge">
-            <div class="wrapper-languages">
-                <h4>Languages</h4>
-                <ul>
-                    <li>JavaScript (ES5/ES6)</li>
-                    <li>Ruby</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </div>
-            <div class="wrapper-frameworks">
-                <h4>Frameworks</h4>
-                <ul>
-                    <li>Bootstrap</li>
-                    <li>Ruby on rails</li>
-                    <li>RSpec</li>
-                    <li>Capibara</li>
-                    <li>Selenium</li>
-                </ul>
-            </div>
-            <div class="wrapper-skills">
-                <h4>Skills</h4>
-                <ul>
-                    <li>Codekit</li>
-                    <li>Codepen</li>
-                    <li>Github</li>
-                    <li>GitLab</li>
-                    <li>Terminal</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer class="wrapper-footer">
-        <h2 class="title-footer">Get started</h2>
-        <p class="description-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-        <form action="https://formspree.io/f/mayvqwod" method="post" class="wrapper-form">
-            <ul>    
-                <li>
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name" maxlength="30" required>
-                </li>
-                <li>
-                    <label for="email">Your email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email" required>
-                </li>
-                <li>
-                    <label for="message" class="message-label">Enter your message here...</label>
-                    <textarea name="message" id="message" maxlength="500" placeholder="Enter your message here..." required></textarea>
-                </li>
+          <div class="wrapper-languages">
+            <h4>Languages</h4>
+            <ul>
+              <li>JavaScript (ES5/ES6)</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
-            <input class="button-index" type="submit" value="Start collaboration">
-        </form>
+          </div>
+          <div class="wrapper-frameworks">
+            <h4>Frameworks</h4>
+            <ul>
+              <li>Bootstrap</li>
+              <li>Ruby on rails</li>
+              <li>RSpec</li>
+              <li>Capibara</li>
+              <li>Selenium</li>
+            </ul>
+          </div>
+          <div class="wrapper-skills">
+            <h4>Skills</h4>
+            <ul>
+              <li>Codekit</li>
+              <li>Codepen</li>
+              <li>Github</li>
+              <li>GitLab</li>
+              <li>Terminal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    <footer class="wrapper-footer">
+        <div class="footer1">
+            <h2 class="title-footer">Get started</h2>
+            <p class="description-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+            <form action="https://formspree.io/f/mayvqwod" method="post" class="wrapper-form">
+                <ul>    
+                    <li class="name">
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" maxlength="30" required>
+                    </li>
+                    <li class="email">
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
+                    </li>
+                    <li class="message">
+                        <label for="message" class="message-label">Enter your message here...</label>
+                        <textarea name="message" id="message" maxlength="500" placeholder="Enter your message here..." required></textarea>
+                    </li>
+                </ul>
+                <input class="button-index" type="submit" value="Start collaboration">
+            </form>
+        </div>
         <div class="wrapper-social">
             <div class="social-title">
               <h3 class="title-social">Get my Resume</h3>
@@ -264,5 +277,10 @@
             </div>
         </div>    
     </footer>
+    <div class="p-background1"></div>
+    <div class="p-background2"></div>
+    <div class="p-background3"></div>
+    <div class="p-background4"></div>
+    <div class="p-background5"></div>
 </body>
 </html>
