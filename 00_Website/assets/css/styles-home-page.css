@@ -3,7 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
-  font-size: 10px;
+  font-size: 3.125vw;
 }
 
 .wrapper-header {
@@ -11,24 +11,20 @@
   flex-direction: column;
   max-width: 100vw;
   background-image: url(/03_Resources/01_Graphics/02_Stock/home-nav-wra.svg);
+  background-size: 11.1em;
   background-repeat: no-repeat;
 }
 
-.wrapper-nav {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: url(/03_Resources/01_Graphics/02_Stock/image_geometry_menu_1.svg) left top no-repeat, url(/03_Resources/01_Graphics/02_Stock/image_geometry_menu_2.svg) center bottom no-repeat;
-  background-color: transparent;
-  clip-path: circle(2.5rem at calc(100% - 4.5rem) 4.5rem);
+.icon-hamburgermenu {
+  position: absolute;
+  width: 2rem;
+  height: 1.4rem;
+  left: 28.4rem;
+  top: 1.9rem;
 }
 
-#active:checked ~ .wrapper-nav {
-  clip-path: circle(75%);
-  background-color: white;
-}
-
-#active {
+.languages-project .short,
+.information-project .short {
   display: none;
 }
 
@@ -43,23 +39,7 @@
 }
 
 .wrapper-menu {
-  position: absolute;
-  list-style: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.wrapper-menu li a {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.6rem;
-  line-height: 300%;
-  text-align: center;
-  color: #000;
+  display: none;
 }
 
 .wrapper-headline {
@@ -69,7 +49,7 @@
 }
 
 .title-headline {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -80,7 +60,7 @@
 }
 
 .content-headline {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -91,14 +71,14 @@
 .wrapper-button {
   display: flex;
   flex-direction: column;
-  margin: 0 1.6rem 3.13rem 1.6rem;
+  margin: 4rem 1.6rem 0 0;
 }
 
 .button-index {
   background-color: #1a2236;
   border: none;
   height: 5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
@@ -109,14 +89,16 @@
 
 .separation-header-projects {
   background-image: url(/03_Resources/01_Graphics/02_Stock/separation-headline-project.svg);
+  background-size: 100%;
   width: 100%;
-  height: 16rem;
+  height: 16em;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .title-project-section {
-  font-family: 'Playfair Display', serif;
+  grid-row: 1;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -128,36 +110,36 @@
 .wrapper-projects {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 6fr;
+  grid-template-rows: 7fr;
 }
 
 .project1-section {
-  grid-row: 1;
-  align-self: stretch;
-}
-
-.project2-section {
   grid-row: 2;
   align-self: stretch;
 }
 
-.project3-section {
+.project2-section {
   grid-row: 3;
   align-self: stretch;
 }
 
-.project4-section {
+.project3-section {
   grid-row: 4;
   align-self: stretch;
 }
 
-.project5-section {
+.project4-section {
   grid-row: 5;
   align-self: stretch;
 }
 
-.project6-section {
+.project5-section {
   grid-row: 6;
+  align-self: stretch;
+}
+
+.project6-section {
+  grid-row: 7;
   align-self: stretch;
 }
 
@@ -172,7 +154,7 @@
 }
 
 .name-project {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 2rem;
@@ -197,7 +179,7 @@ form > ul > li {
   display: flex;
   background-color: #98dede;
   list-style: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 1.03334rem;
@@ -217,7 +199,7 @@ form > ul > li {
   align-items: center;
   justify-content: space-around;
   background-color: #1a2236;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
@@ -241,7 +223,7 @@ form > ul > li {
 }
 
 .title-about {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -251,11 +233,11 @@ form > ul > li {
 }
 
 .description-about {
-  font-family: 'Poppins', serif;
+  font-family: "Poppins", serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
   color: #1a2236;
   margin: 2rem 0.1rem 0 0.1rem;
 }
@@ -276,8 +258,8 @@ form > ul > li {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr;
-  row-gap: 1.6rem;
-  margin-top: 4rem;
+  row-gap: 1.6em;
+  margin-top: 4em;
 }
 
 .wrapper-languages {
@@ -286,6 +268,7 @@ form > ul > li {
   background-image: url(/03_Resources/01_Graphics/02_Stock/background-icon-languages.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 10.2em 10.2em;
   place-self: center;
 }
 
@@ -295,6 +278,7 @@ form > ul > li {
   background-image: url(/03_Resources/01_Graphics/02_Stock/backgroun-icon-frameworks.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 10.222em 10.222em;
   place-self: center;
 }
 
@@ -304,6 +288,7 @@ form > ul > li {
   background-image: url(/03_Resources/01_Graphics/02_Stock/background-icon-skills.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: 10.2em 10.2em;
   place-self: center;
 }
 
@@ -320,7 +305,7 @@ form > ul > li {
 .wrapper-languages > h4,
 .wrapper-frameworks > h4,
 .wrapper-skills > h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 2rem;
@@ -339,7 +324,7 @@ form > ul > li {
 .wrapper-languages > ul > li,
 .wrapper-frameworks > ul > li,
 .wrapper-skills > ul > li {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.8rem;
@@ -354,11 +339,12 @@ form > ul > li {
   background-color: #f9f9fa;
   background-image: url(/03_Resources/01_Graphics/02_Stock/home-nav-wra.svg);
   background-repeat: no-repeat;
+  background-size: 11.1em 7.402em;
 }
 
 .title-footer {
   margin: 10.6rem 0 0 1.8rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
@@ -369,7 +355,7 @@ form > ul > li {
 
 .description-footer {
   margin: 2rem 0 0 1.8rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -394,7 +380,7 @@ input {
   margin-bottom: 0.8rem;
   padding-left: 1.6rem;
   padding-top: 0.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -411,7 +397,7 @@ textarea {
   margin-bottom: 0.8rem;
   padding-left: 1.6rem;
   padding-top: 0.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
@@ -421,9 +407,9 @@ textarea {
 
 label {
   position: absolute;
-  top: 4px;
-  left: 16px;
-  font-family: 'Poppins', sans-serif;
+  top: 0.4rem;
+  left: 1.6rem;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -446,27 +432,801 @@ input::placeholder,
 
 .social-title {
   display: flex;
-  margin: 32px 0 30px 16px;
+  margin: 3.2rem 0 3rem 1.6rem;
 }
 
 .icons-social-media-footer {
   display: flex;
-  margin: 0 20px 40px 19px;
+  margin: 0 2rem 4rem 1.9rem;
   justify-content: space-between;
 }
 
+.icons-social-media-footer img {
+  width: 2.4em;
+}
+
 .title-social {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: #92dcdc;
-  margin-right: 16px;
+  margin-right: 1.6rem;
 }
 
-/* @media all and (min-width: 501px) {
+.icon-link-teal {
+  height: 2.2em;
+  width: 2.2em;
 }
-@media all and (min-width: 1001px) {
 
-} */
+.project-languages5 .long {
+  display: inline-block;
+}
+
+.project-languages5 .short {
+  display: none;
+}
+
+.information-project5 .long {
+  display: inline-block;
+}
+
+.information-project5 .short {
+  display: none;
+}
+
+@media all and (min-width: 992px) {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    font-size: 0.6944vw;
+  }
+
+  .icon-hamburgermenu {
+    display: none;
+  }
+
+  .wrapper-header {
+    background: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10em 87.7em;
+  }
+
+  .wrapper-nav {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .wrapper-menu {
+    display: block;
+    display: flex;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .wrapper-menu li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: right;
+    color: #1a2236;
+  }
+
+  .wrapper-headline {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .title-headline {
+    font-size: 11rem;
+    line-height: 100%;
+    margin: 19.2rem 9.4rem 0 16rem;
+  }
+
+  .content-headline {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.01em;
+    margin: 6rem 9.4rem 0 16rem;
+  }
+
+  .separation-header-projects {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: end;
+    background: none;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_1.svg);
+    background-repeat: no-repeat;
+    background-size: 70.2em 87.7em;
+    height: 87.7em;
+    width: 70.2em;
+  }
+
+  .wrapper-button {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    margin: 5.9rem 0 0 16rem;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 17.5em 17.5em;
+    height: 100%;
+  }
+
+  .button-index {
+    width: 25.4rem;
+    height: 7rem;
+  }
+
+  .button-index:active {
+    transform: translateY(0.3rem);
+    color: #1a2236;
+    background-color: #fff;
+    border: 2em solid #1a2236;
+  }
+
+  .wrapper-projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 55.8em 35em 46.5em 27em;
+    margin: 21em 0 0 0;
+    align-self: center;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
+    background-position: 118.7em 32.3em;
+    background-repeat: no-repeat;
+  }
+
+  .title-project-section {
+    grid-area: 1 / 1 / 2 / 2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11rem;
+    line-height: 100%;
+    transform: rotate(-90deg);
+    margin-top: 10.5rem;
+    padding-right: 3.2rem;
+    text-align: right;
+    margin-right: 0;
+  }
+
+  .project1-section {
+    grid-area: 1 / 2 / 2 / 3;
+    overflow: hidden;
+  }
+
+  .mockup-project1 {
+    position: absolute;
+    width: 96rem;
+    height: 55.8rem;
+    left: 48rem;
+    top: 118.7rem;
+  }
+
+  .information-project1 {
+    position: absolute;
+    width: 96rem;
+    height: 35.3rem;
+    left: 48rem;
+    top: 139.2rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
+    backdrop-filter: blur(2.4em);
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+  }
+
+  .mockup-project1:hover + .information-project1 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .projectname1 {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 80%;
+    margin: 6rem 17.4rem 0 6rem;
+  }
+
+  .languages-project1 {
+    margin: 3.4rem 0 0 6rem;
+    gap: 2rem;
+    height: 4rem;
+  }
+
+  .languages-project1 li {
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 2rem;
+    line-height: 80%;
+  }
+
+  .wrapper-see-project-btn1 {
+    margin: 6rem 68.8rem 6rem 6rem;
+  }
+
+  .see-project-button {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #1a2236;
+    width: 21.2rem;
+    height: 5.1rem;
+  }
+
+  .project2-section {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-self: start;
+    align-self: end;
+    flex-direction: column;
+  }
+
+  .mockup-project2 {
+    height: 27rem;
+    width: 46.5rem;
+    margin-bottom: -0.7rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+
+  .information-project2 {
+    position: absolute;
+    width: 46.5rem;
+    height: 21.8rem;
+    left: 0;
+    top: 188rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
+    backdrop-filter: blur(2.4em);
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+  }
+
+  .mockup-project2:hover + .information-project2 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .projectname2 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .information-project2 .long {
+    display: none;
+  }
+
+  .information-project2 .short {
+    display: inline-block;
+  }
+
+  .project-languages2 {
+    display: flex;
+    margin: 2rem 0 0 3rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages2 li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn2 {
+    margin: 1.5rem 0 3rem 3rem;
+  }
+
+  .project3-section {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mockup-project3 {
+    width: 100%;
+    height: 100%;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+
+  .information-project3 {
+    position: absolute;
+    width: 72.2rem;
+    height: 37.2rem;
+    left: 0;
+    top: 219rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
+    backdrop-filter: blur(2.4rem);
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+  }
+
+  .mockup-project3:hover + .information-project3 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .projectname3 {
+    font-weight: bold;
+    font-size: 5.34rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 6rem 0 2rem 4.5rem;
+  }
+
+  .information-project3 .long {
+    display: none;
+  }
+
+  .information-project3 .short {
+    display: inline-block;
+  }
+
+  .project-languages3 {
+    display: flex;
+    margin: 4rem 0 0 4.5rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages3 li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn3 {
+    margin: 5rem 0 3rem 4.5rem;
+  }
+
+  .project4-section {
+    grid-area: 4 / 2 / 5 / 3;
+    width: 46.5rem;
+    height: 27rem;
+    margin-top: -0.4rem;
+  }
+
+  .mockup-project4 {
+    height: 27rem;
+    width: 46.5rem;
+    margin-bottom: -0.35rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+
+  .information-project4 {
+    position: absolute;
+    width: 46.5rem;
+    height: 21.6rem;
+    left: 72rem;
+    top: 261rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
+    backdrop-filter: blur(2.4em);
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+  }
+
+  .mockup-project4:hover + .information-project4 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .projectname4 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .information-project4 .long {
+    display: none;
+  }
+
+  .information-project4 .short {
+    display: inline-block;
+  }
+
+  .project-languages4 {
+    display: flex;
+    margin: 2rem 0 0 3rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages4 li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn4 {
+    margin: 3rem 0 3rem 3rem;
+  }
+
+  .mockup-project5 {
+    position: absolute;
+    width: 46.5rem;
+    height: 27rem;
+    left: 97.5rem;
+    top: 201.5rem;
+    margin-bottom: -0.35rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  }
+
+  .information-project5 {
+    position: absolute;
+    width: 46.5rem;
+    height: 27rem;
+    left: 97.5rem;
+    top: 201.5rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
+    backdrop-filter: blur(2.4em);
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+  }
+
+  .mockup-project5:hover + .information-project5 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .name-project5 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .information-project5 .long {
+    display: none;
+  }
+
+  .information-project5 .short {
+    display: inline-block;
+  }
+
+  .project-languages5 {
+    display: flex;
+    margin: 2rem 0 0 3rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages5 li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn5 {
+    margin: 3rem 0 3rem 3rem;
+  }
+
+  .mockup-project6 {
+    position: absolute;
+    height: 27rem;
+    width: 46.5rem;
+    left: 97.5rem;
+    top: 174.5rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1);
+    z-index: 10;
+  }
+
+  .information-project6 {
+    position: absolute;
+    width: 46.5rem;
+    height: 21.8rem;
+    left: 97.5rem;
+    top: 179.7rem;
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
+    backdrop-filter: blur(2.4em);
+    transform: translateY(35.3rem);
+    transition: 1s ease-in;
+    opacity: 0;
+    z-index: 11;
+  }
+
+  .mockup-project6:hover + .information-project6 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .projectname6 {
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 80%;
+    color: #fff;
+    margin: 3rem 0 2rem 3rem;
+  }
+
+  .information-project6 .long {
+    display: none;
+  }
+
+  .information-project6 .short {
+    display: inline-block;
+  }
+
+  .project-languages6 {
+    display: flex;
+    margin: 2rem 0 0 3rem;
+    gap: 1.5rem;
+    height: 4rem;
+    align-items: center;
+  }
+
+  .project-languages6 li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 1.2rem 2rem;
+  }
+
+  .wrapper-see-project-btn6 {
+    margin: 3rem 0 3rem 3rem;
+  }
+
+  .information-project .long,
+  .information-project .short {
+    margin-left: 0;
+  }
+
+  .wrapper-about {
+    display: flex;
+    flex-direction: row;
+    margin: 21.6rem 16rem 15.8rem 16rem;
+  }
+
+  .content-about {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    align-items: flex-start;
+  }
+
+  .title-about {
+    font-size: 11rem;
+    line-height: 100%;
+  }
+
+  .description-about {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #1a2236;
+    margin: 2rem 1.6rem 0 0.1rem;
+  }
+
+  .wrapper-button-cv {
+    margin: 4.2rem 0 0 0;
+    background: none;
+  }
+
+  .button-cv:active {
+    transform: translateY(0.3rem);
+    color: #1a2236;
+    background-color: #fff;
+    border: 0.2em solid #1a2236;
+  }
+
+  .wrapper-knowledge {
+    order: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0;
+    margin-top: 0;
+    margin-right: 9.6em;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots_with_teal.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 22.2em;
+  }
+
+  .wrapper-languages {
+    grid-row: 1;
+  }
+
+  .wrapper-frameworks {
+    grid-row: 1;
+  }
+
+  .wrapper-skills {
+    grid-row: 2;
+  }
+
+  .wrapper-footer {
+    align-items: center;
+    background: none;
+  }
+
+  .footer1 {
+    background-color: #f9f9fa;
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_6.svg), url(/03_Resources/01_Graphics/02_Stock/image-geometry_7.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size: 26.306em 35.084em, 35.075em 35.084em;
+  }
+
+  .title-footer {
+    font-size: 11rem;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  .description-footer {
+    margin: 4rem 44.6rem 0 44.6rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.01em;
+    width: 54.8rem;
+    height: 6.3rem;
+  }
+
+  .wrapper-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper-form ul {
+    display: grid;
+    grid-template-columns: 25.4em 25.3em;
+    grid-template-rows: 6em 14em;
+    column-gap: 3.5em;
+    row-gap: 4.2em;
+  }
+
+  .message {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .wrapper-social {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 12.3em;
+  }
+
+  .social-title {
+    margin-left: 16rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+
+  .icons-social-media-footer {
+    margin-right: 16rem;
+    margin-top: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30em;
+  }
+
+  .p-background1 {
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 16em 16em;
+    width: 16em;
+    height: 16em;
+    left: 30.3em;
+    top: 118.7em;
+  }
+
+  .p-background2 {
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_2.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 51.1em 35em;
+    width: 51.1em;
+    height: 35em;
+    left: 46.7em;
+    top: 174.5em;
+  }
+
+  .p-background3 {
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_3.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 63.975em 27.542em;
+    width: 63.975em;
+    height: 27.542em;
+    left: 80em;
+    top: 228.5em;
+  }
+
+  .p-background4 {
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_5.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 21.17em 12.404em;
+    width: 21.17em;
+    height: 12.404em;
+    left: 0;
+    top: 255.6em;
+  }
+
+  .p-background5 {
+    background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_4.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 8.769em 8.771em;
+    width: 8.769em;
+    height: 8.771em;
+    left: 63.6em;
+    top: 255.569em;
+  }
+}
