@@ -546,11 +546,13 @@ input::placeholder,
   .separation-header-projects {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    justify-self: end;
     background: none;
     background-image: url(/03_Resources/01_Graphics/02_Stock/image-geometry_1.svg);
     background-repeat: no-repeat;
     background-size: 70.2em 87.7em;
     height: 87.7em;
+    width: 70.2em;
   }
 
   .wrapper-button {
@@ -596,7 +598,8 @@ input::placeholder,
     font-size: 11rem;
     line-height: 100%;
     transform: rotate(-90deg);
-    margin-top: 14.5rem;
+    margin-top: 10.5rem;
+    padding-right: 3.2rem;
     text-align: right;
     margin-right: 0;
   }
@@ -1176,9 +1179,10 @@ input::placeholder,
     background-image: url(/03_Resources/01_Graphics/02_Stock/image_dots.svg);
     background-repeat: no-repeat;
     position: absolute;
+    background-size: 16em 16em;
     width: 16em;
     height: 16em;
-    left: 32.3em;
+    left: 30.3em;
     top: 118.7em;
   }
 
@@ -1189,7 +1193,7 @@ input::placeholder,
     background-size: 51.1em 35em;
     width: 51.1em;
     height: 35em;
-    left: 46.4em;
+    left: 46.7em;
     top: 174.5em;
   }
 
