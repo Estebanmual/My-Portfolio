@@ -13,8 +13,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-*Update when branch is ready to merge*
+[Live Demo Link](https://estebanmual.github.io/My-Portfolio/)
 
 ## Authors
 
