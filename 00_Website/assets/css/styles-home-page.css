@@ -302,9 +302,9 @@ form > ul > li {
   justify-content: center;
 }
 
-.wrapper-languages > h4,
-.wrapper-frameworks > h4,
-.wrapper-skills > h4 {
+.wrapper-languages > h3,
+.wrapper-frameworks > h3,
+.wrapper-skills > h3 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
