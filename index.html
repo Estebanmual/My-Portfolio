@@ -15,12 +15,14 @@
   <link rel="stylesheet" href="00_Website/assets/css/styles-home-page.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
- 
+  <script src="./menu.js" defer></script>
   <title>My Portfolio</title>
 </head>
 <body>
     <header class="wrapper-header">
-        <img src="03_Resources/01_Graphics/02_Stock/ic_menu.svg" alt="Hamburger menu" class="icon-hamburgermenu">
+        <button type="button" id="menu-options">
+          <img src="03_Resources/01_Graphics/02_Stock/ic_menu.svg" alt="Hamburger menu" class="icon-hamburgermenu">
+        </button>
         <nav class="wrapper-nav">
             <ul class="wrapper-menu">
                 <li><a href="#hello">Hello</a></li>
@@ -29,7 +31,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="mobile-menu">
+        <div class="mobile-menu invisible">
           <button type="button">X</button>
           <ul class="wrapper-mobile-menu">
             <li><a href="#hello">Hello</a></li>
