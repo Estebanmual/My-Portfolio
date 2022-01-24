@@ -23,13 +23,22 @@
         <img src="03_Resources/01_Graphics/02_Stock/ic_menu.svg" alt="Hamburger menu" class="icon-hamburgermenu">
         <nav class="wrapper-nav">
             <ul class="wrapper-menu">
-                <li><a href="#">Hello</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hello">Hello</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="wrapper-headline">
+        <div class="mobile-menu">
+          <button type="button">X</button>
+          <ul class="wrapper-mobile-menu">
+            <li><a href="#hello">Hello</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="wrapper-headline" id="hello">
             <h1 class="title-headline">Charlie<br>Giorgania</h1>
             <p class="content-headline">Hello! I am a software developer! I can help you build a product, feature or website. Taka a look of my works.
                 If you like what you see and have a project you need coded, don’t hesitate and contact me.</p>
@@ -40,7 +49,7 @@
         <div class="separation-header-projects"></div>
     </header>
     
-    <section class="wrapper-projects-section">     
+    <section class="wrapper-projects-section" id="portfolio">     
         <div class="wrapper-projects wrapper-projects2">
             <h2 class="title-project-section">Projects</h2>
             <div class="projects-index project1-section">                
@@ -161,7 +170,7 @@
             </div>
         </div>
     </section>
-    <section class="wrapper-about">
+    <section class="wrapper-about" id="about">
         <div class="content-about">
           <h2 class="title-about">About</h2>
           <p class="description-about">
@@ -212,7 +221,7 @@
           </div>
         </div>
       </section>
-    <footer class="wrapper-footer">
+    <footer class="wrapper-footer" id="contact">
         <div class="footer1">
             <h2 class="title-footer">Get started</h2>
             <p class="description-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
