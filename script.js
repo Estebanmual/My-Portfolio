@@ -69,7 +69,7 @@ function getProjectHTML(project) {
         ${technologies}
         </ul>
         <div class="wrapper-see-project-btn wrapper-see-project-btn${project.id}">
-            <button type="button" class="see-project-button see-project-button${project.id}">See this project <img
+            <button type="button" data-id=${project.id} class="see-project-button see-project-button${project.id}">See this project <img
             src="03_Resources/01_Graphics/02_Stock/right-white-arrow.svg"
             alt="Right white arrow"
             class="arrow-see-project-btn"
@@ -88,5 +88,48 @@ function getProjectHTML(project) {
       worksContainer.appendChild(workCard);
     }
   }
+
+  function getDetailHTML(project){
+      return `
+      
+    <div>X</div>
+    <h2>Project Name</h2>
+    <ul>
+      <li>HTML/CSS</li>
+      <li>Ruby on Rails</li>
+      <li>JavaScript</li>
+    </ul>
+    <img src="04_Mockups/project1-mockup.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+
+      Ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi.</p>
+    <button>See live</button>
+    <button>See source</button>
+  
+      `;
+  }
+
+  function getProjectData(index){
+      for(let i=0; i<projectsInfo.length; i+=1) {
+          if(projectsInfo[i].id=== Number(index)) return projectsInfo[i];
+      }
+      return undefined;
+  }
+  document.addEventListener('click', (e)=>{
+      if(e.target.matches('.information-project button')){
+        const projectInfo=getProjectData(e.target.dataset.id);
+        const html=getDetailHTML(projectInfo);
+        const worksContainer = document.querySelector('.wrapper-projects');
+        const div=document.createElement('div');
+        div.classList.add('work-detail');
+        div.style.position="absolute";
+        div.style.top= `${window.scrollY}px`;
+        div.innerHTML=html;
+        worksContainer.appendChild(div);
+      }
+  });
 
   loadProjectsInfo();
