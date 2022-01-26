@@ -23,5 +23,23 @@ formCtrl.addEventListener('submit', (e) => {
     e.preventDefault();
     return;
   }
- 
+  const email = emailCtrl.value;
+  /*
+    Check for uppercase letter within the email address
+  */
+  const regex = /([A-Z])/g;
+  if (email.search(regex) !== -1) {
+    emailCtrl.setCustomValidity('Not good');
+    emailCtrl.reportValidity();
+    errorCtrl.textContent = 'Expecting lowercase letters';
+    emailCtrl.setCustomValidity('');
+    e.preventDefault();
+    return;
+  }
+  // Check if is a valid email address with just lowercase letters
+  const regEmail = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9-]+(?:\.[a-z0-9-]+)*$/g;
+  if (email.search(regEmail) === -1) {
+    errorCtrl.textContent = 'Expecting a valid email address';
+    e.preventDefault();
+  }
 });
