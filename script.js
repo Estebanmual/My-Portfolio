@@ -109,7 +109,8 @@ function getDetailHTML(project) {
 
   return `
       
-      <button type="button" id="close-button">X</button>
+     <div class="detail-body">
+     <button type="button" id="close-button">X</button>
       <h2>${project.name}</h2>
       <ul>
         ${technologies}
@@ -120,6 +121,7 @@ function getDetailHTML(project) {
         <button class="details-footer-btn" onclick="window.open('${project.linkLive}', '_blank')" >See live <img src="03_Resources/01_Graphics/02_Stock/ic_link.svg" alt=""></button>
         <button class="details-footer-btn" onclick="window.open('${project.linkSource}', '_blank')" >See source <img src="03_Resources/01_Graphics/02_Stock/Group.svg" alt=""></button>
       </div>
+     </div> 
       `;
 }
 

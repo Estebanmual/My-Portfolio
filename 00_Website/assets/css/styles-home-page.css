@@ -266,6 +266,8 @@ form > ul > li {
   place-self: center;
 }
 
+
+
 .wrapper-frameworks {
   grid-row: 2;
   background-color: #e2505c;
@@ -552,7 +554,13 @@ input::placeholder,
   z-index: 1000;
   display: flex;
   flex-direction: column;
+  overflow-y: initial;
 }
+
+.detail-body {
+  overflow-y: auto;
+}
+
 
 #close-button {
   display: block;
