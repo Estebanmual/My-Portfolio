@@ -28,6 +28,7 @@
     />
     <script src="./menu.js" defer></script>
     <script src="./script.js" defer></script>
+    <script src="./formValidation.js" defer></script>
     <title>My Portfolio</title>
   </head>
   <body>
@@ -138,6 +139,8 @@
           action="https://formspree.io/f/mayvqwod"
           method="post"
           class="wrapper-form"
+          id="form" 
+          novalidate
         >
           <ul>
             <li class="name">
@@ -179,6 +182,7 @@
             type="submit"
             value="Start collaboration"
           />
+          <span id="error"></span>
         </form>
       </div>
       <div class="wrapper-social">
