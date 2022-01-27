@@ -352,7 +352,8 @@ form > ul > li {
   text-align: left;
 }
 
-.description-footer {
+.description-footer,
+#error {
   margin: 2rem 0 0 1.8rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -1224,7 +1225,8 @@ input::placeholder,
     text-align: center;
   }
 
-  .description-footer {
+  .description-footer,
+  #error {
     margin: 4rem 44.6rem 0 44.6rem;
     font-size: 1.4rem;
     line-height: 2.1rem;
